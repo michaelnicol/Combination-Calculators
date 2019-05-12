@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css.css" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="JS.js"></script>
+    <title>Combination Generator 3.0</title>
+</head>
+<body>
+    <h1>Combination Generator 3.0</h1>
+    <div class="main">
+        <input type="text" placeholder="String" id="input_string" />
+        <h2>Options:</h2>
+        <div class="question">
+            <p>Repeat Chacaters</p>
+            <select id="state">
+                <option>no-repeat</option>
+                <option>repeat</option>
+            </select>
+        </div>
+        <div class="question">
+            <p>Round Percentage Place</p>
+            <select id="round_selection">
+                <option>10</option>
+                <option>100</option>
+                <option>1000</option>
+                <option>10000</option>
+            </select>
+        </div>
+        <div class="question">
+            <p>Chacaters Per Combination</p>
+            <input type="number" id="max" min="1" max="10" placeholder="#" />
+        </div>
+        <button id="run">Calculate</button>
+        <hr>
+        <div class="process">
+            <p>Calculations:</p>
+            <div class="code" id="combosTried">
+                <ul>
+                    <li>Combinations Tried: <span id="combos_tried">N/A</span></li>
+                    <li>Successful Combinations: <span id="combos_passed">N/A</span></li>
+                    <li>Combination Gap: <span id="gap">N/A</span></li>
+                    <li>Calculation Time: <span id="current_time">N/A</span></li>
+                    <li>Progress Percentage: <span id="percent">N/A</span></li>
+                </ul>
+            </div>
+            <p id="time">Combinations:</p>
+            <div class="code" id="combinations">
+                N/A
+            </div>
+        </div>
+    </div>
+    </div>
+    <p class="credit">Made by <a href="https://codepen.io/Mike-was-here123/" target="_blank">Michael Nicol</a>. Special
+        thanks to <a href="https://www.freecodecamp.org/forum/u/lasjorg/summary" target="_blank">lasjorg</a></p>
+</body>
+</html>
